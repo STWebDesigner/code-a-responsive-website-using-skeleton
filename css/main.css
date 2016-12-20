@@ -1,0 +1,398 @@
+/* --- CSS Document --- */
+
+.wrapper-sm {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.wrapper-lg {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* typography */
+h1, h2, h4, h5 {
+    color: #10d5ce;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* buttons */
+a {
+    text-decoration: none;
+}
+
+.center-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* account bar section */
+.account {
+    border-bottom: #000 solid 2px;
+}
+
+a.login {
+    color: #000;
+    text-decoration: underline;
+}
+
+.login p {
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+a.basket {
+    float: right;
+    text-decoration: underline
+}
+
+.basket img {
+    float: left;
+    margin: 5px 8px 5px 0;
+}
+
+.basket p {
+    float: left;
+    text-decoration: underline;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+/* navigation */
+.navbar {
+    border-bottom: #10d5ce solid 5px;
+}
+
+.company {
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+.nav ul {
+    margin: 50px 0 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav .active, .nav a:hover {
+    color: #10d5ce;
+}
+
+.mobnav {
+    display: none;
+}
+
+/* who we are section */
+.about {
+    margin-top: 80px;
+}
+
+.team {
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.staff {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 20px 0;
+}
+
+.team-face {
+    border-radius: 50%;
+    width: 110px;
+    height: auto;
+}
+
+.staff p, .staff strong {
+    margin: 0;
+    text-align: center;
+}
+
+.staff p {
+    letter-spacing: 1px;
+}
+
+/* our services section */
+.services {
+    margin-top: 80px;
+}
+
+.services-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.services-list li {
+    font-size: 16px;
+}
+
+/* our products section */
+.products {
+    margin-top: 80px;
+}
+
+th, td {
+    text-align: center;
+}
+
+th:last-child, td:last-child {
+    padding-right: 15px;
+}
+
+.productstable {
+    margin-top: 40px;
+}
+
+.productstablemob {
+    display: none;
+}
+
+/* videos section */
+.videos {
+    margin-top: 80px;
+}
+
+.video-unit {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.video-unit img {
+    float: left;
+}
+
+/* contact section */
+.contact {
+    margin-top: 80px;
+}
+
+.contactform {
+    margin-top: 40px;
+}
+
+.send-yourself-copy {
+    float: right;
+}
+
+/* footer */
+footer {
+    margin-top: 80px;
+    border-top: #10d5ce solid 5px;
+}
+
+.footer {
+    margin: 30px 0 10px 0;
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+.social-icons {
+    float: right;
+}
+
+.social-icons img {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    /* navigation */
+    .nav, .company {
+        width: 100%!important;
+        margin-left: 0!important;
+    }
+    
+    .nav ul {
+        margin: 0 0 2.5rem 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    /* footer */
+    .copy, .icons {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%!important;
+        float: none;
+        overflow: hidden;
+    }
+    
+    .social-icons {
+        float: none;
+        margin-bottom: 20px;
+    }
+    
+    .social-icons img {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /* account bar section */
+    .log, .bask {
+        text-align: center;
+        float: none;
+        overflow: hidden;
+    }
+    
+    .wrap {
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .login p {
+        margin: 20px 0 0 0;
+    }
+    
+    a.basket {
+        float: none;
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    /* our products section */
+    .productstable {
+        display: none;
+    }
+    
+    .productstablemob {
+        display: block;
+        margin-top: 40px;
+    }
+    
+    .productmob-unit {
+        border-bottom: 1px solid #CFCFCF;
+        margin-bottom: 20px;
+    }
+    
+    .productmob-unit p {
+        margin-bottom: 0;   
+    }
+    
+    .button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+        margin: 15px 0;   
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* navigation */
+    .nav {
+        display: none;
+    }
+    
+    .mobnav {
+        display: block;
+    }
+    
+    a.mobbtn {
+        border: #000 solid 2px;
+        font-weight: bold;
+    }
+    
+    a.mobbtn:hover {
+        border: #10d5ce solid 2px;
+        color: #000!important;
+    }
+    
+    .click-nav {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .click-nav ul {
+        padding: 0;
+        margin: 1.5rem 0 1.5rem 0!important;
+    }
+    
+    .click-nav ul li {
+        position: relative;
+        list-style: none;
+        cursor: pointer;
+    }
+    
+    .click-nav ul li ul {
+        left: 0;
+        right: 0;
+    }
+    
+    .click-nav ul .clicker {
+        background-color: #fff;
+        margin: 0 20px;
+        font-size: 18px;
+        color: #000;
+        text-align: center;
+    }
+    
+    .click-nav ul .clicker:hover,
+    .click-nav ul .active {
+        background-color: #fff;
+        color: #10d5ce;
+    }
+    
+    .click-nav ul li a {
+        display: block;
+        padding: 8px 10px 8px 10px;
+        text-decoration: none;
+        background-color: #fff;
+        font-size: 18px;
+        color: #000;
+        text-align: center;
+    }
+    
+    .click-nav ul li a:hover {
+        background-color: #fff;
+        color: #10d5ce;
+    }
+    
+    /* .click-nav fallbacks */
+    .click-nav .no-js ul {
+        display: none;
+    }
+    
+    .click-nav .no-js:hover ul {
+        display: block;
+    }
+    
+    /* contact section */
+    .send-yourself-copy {
+        float: none;
+    }
+}
